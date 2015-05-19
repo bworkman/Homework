@@ -1,29 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<h1>Contact</h1>
+
+<p class="name">
   <strong>First name:</strong>
   <%= @contact.first_name %>
 </p>
 
-<p>
+<p class="name">
   <strong>Last name:</strong>
   <%= @contact.last_name %>
 </p>
 
-<p>
+<p class="info">
   <strong>Email:</strong>
   <%= @contact.email %>
 </p>
 
-<p>
+<p class="info">
   <strong>Phone:</strong>
   <%= @contact.phone %>
 </p>
 
-<p>
+<p class="info">
   <strong>Address:</strong>
   <%= @contact.address %>
 </p>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<p class="other_links"><%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'List', contacts_path %></p>
