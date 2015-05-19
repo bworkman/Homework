@@ -2,6 +2,12 @@
 
 <h1>Contact</h1>
 
+	<div class="nav">
+		<%= link_to 'Add New Contact', new_contact_path %>
+		<%= '|'%>
+		<%= link_to 'List', contacts_path %>
+	</div>
+
 <p class="name">
   <strong>First name:</strong>
   <%= @contact.first_name %>

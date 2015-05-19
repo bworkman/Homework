@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 <html>
 <body>
-<h1>Listing Contacts</h1>
-
+<h1>Address Book</h1>
+	<div class="nav">
+		<%= link_to 'Add New Contact', new_contact_path %>
+	</div>
 <table>
   <thead>
     <tr>
@@ -12,7 +14,7 @@
 
   <tbody>
 	  
-<%= link_to 'New Contact', new_contact_path %>
+
 
     <% @contacts.each do |contact| %>
         <tr><td class="name"><%= contact.first_name %>
@@ -27,7 +29,8 @@
     <% end %>
   </tbody>
 </table>
+
 </body>
 <br>
 
-
+<%= link_to 'New Contact', new_contact_path %>

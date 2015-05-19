@@ -1,5 +1,11 @@
 <h1>Editing Contact</h1>
 
+	<div class="nav">
+		<%= link_to 'Add New Contact', new_contact_path %>
+		<%= '|'%>
+		<%= link_to 'List', contacts_path %>
+	</div>
+
 <%= render 'form' %>
 
 <p class="other_links"><%= link_to 'Show', @contact %> |
